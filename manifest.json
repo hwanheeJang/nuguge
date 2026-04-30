@@ -1,0 +1,16 @@
+{
+  "name": "협업 매칭 플랫폼, 누구게",
+  "short_name": "누구게",
+  "description": "Research collaboration finder for RDA institutes — semantic search across 1,328 researchers' current duties and NTIS project history.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f5f7fa",
+  "theme_color": "#2c7a3e",
+  "lang": "ko-KR",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
