@@ -1,4 +1,4 @@
-const CACHE = 'nuguge-v5';
+const CACHE = 'nuguge-v6';
 const ASSETS = ['./', './index.html', './manifest.json', './icon.svg', './icon-maskable.svg'];
 
 self.addEventListener('install', e => {
@@ -13,7 +13,6 @@ self.addEventListener('activate', e => {
 });
 self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET') return;
-  // For Gemini API calls, bypass cache (always fresh network)
   if (e.request.url.includes('generativelanguage.googleapis.com')) return;
   e.respondWith(
     caches.match(e.request).then(cached => cached || fetch(e.request).then(resp => {
