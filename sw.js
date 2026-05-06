@@ -1,4 +1,4 @@
-const CACHE = 'nuguge-v6';
+const CACHE = 'nuguge-v7';
 const ASSETS = ['./', './index.html', './manifest.json', './icon.svg', './icon-maskable.svg'];
 
 self.addEventListener('install', e => {
